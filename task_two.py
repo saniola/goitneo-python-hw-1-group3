@@ -74,7 +74,7 @@ def main():
         elif command == "all":
             print(show_all(contacts))
         else:
-            print("Invalid command. Type 'help' for a list of available commands.")
+            print("Invalid command.")
 
 if __name__ == '__main__':
     main()
