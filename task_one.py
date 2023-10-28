@@ -21,3 +21,6 @@ def task_one():
 
     if users:
         get_birthdays_per_week(users)
+
+if __name__ == '__main__':
+    task_one()
