@@ -14,14 +14,18 @@ def get_next_week_birthdays(users, birthdays_per_week):
     for user in users:
         name = user["name"]
         birthday = user["birthday"].date()
-
         birthday_this_year = birthday.replace(year=today.year)
-
         delta_days = (birthday_this_year - today).days
-
         birthday_weekday = (today + timedelta(days=delta_days)).strftime("%A")
 
         if 0 <= delta_days <= 6:
+            step = 0
+            if birthday_weekday  == "Saturday":
+                step = 2
+            elif birthday_weekday == "Sunday":
+                step = 1
+            birthday_weekday = (today + timedelta(days=delta_days + step)).strftime("%A")
+
             birthdays_per_week[birthday_weekday].append(name)
 
 def get_birthdays_per_week(users):
