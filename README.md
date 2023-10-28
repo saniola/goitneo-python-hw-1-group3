@@ -2,6 +2,7 @@
 This is the first homework assignment completed for GoIT Neoversity using the Python programming language. The assignment consists of two tasks:
 
 Task 1: Create a function to display a list of colleagues who have upcoming birthdays within the week.
+
 Task 2: Write a console assistant bot that recognizes commands entered from the keyboard and responds according to the entered command.
 
 **How to use: **
