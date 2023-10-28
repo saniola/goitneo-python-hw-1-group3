@@ -1,4 +1,4 @@
-# from get_birthdays_list import get_birthdays_per_week
+from task_one import task_one
 
 def app():
     print('''
@@ -14,13 +14,13 @@ def app():
 
     while True:
         value = input(">>> ")
-        if value == '1':
-            print("Task 1 selected")
+        if value == "1":
+            task_one()
             break
-        elif value == '2':
+        elif value == "2":
             print("Task 2 selected")
             break
-        elif value == '0':
+        elif value == "0":
             print("Exiting the program.")
             break
         else:
