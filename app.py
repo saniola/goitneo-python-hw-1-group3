@@ -1,5 +1,5 @@
 from task_one import task_one
-from task_two import task_two
+from task_two import main
 
 def app():
     print('''
@@ -18,7 +18,7 @@ def app():
         if value == "1":
             task_one()
         elif value == "2":
-            task_two()
+            main()
         elif value == "0":
             print("Exiting the program.")
             break

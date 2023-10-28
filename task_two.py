@@ -50,7 +50,7 @@ def show_all(contacts):
             result += f"{name}: {phone}\n"
         return result
 
-def task_two():
+def main():
     contacts = {}
 
     print("Welcome to the assistant bot!")
@@ -77,4 +77,4 @@ def task_two():
             print("Invalid command. Type 'help' for a list of available commands.")
 
 if __name__ == '__main__':
-    task_two()
+    main()
