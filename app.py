@@ -1,4 +1,5 @@
 from task_one import task_one
+from task_two import task_two
 
 def app():
     print('''
@@ -16,10 +17,8 @@ def app():
         value = input(">>> ")
         if value == "1":
             task_one()
-            break
         elif value == "2":
-            print("Task 2 selected")
-            break
+            task_two()
         elif value == "0":
             print("Exiting the program.")
             break
